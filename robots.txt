@@ -1,7 +1,3 @@
-User-Agent: *
-Allow: *
-Sitemap: https://zacanger.com/sitemap.xml
-
 User-agent: Amazonbot
 Disallow: /
 
