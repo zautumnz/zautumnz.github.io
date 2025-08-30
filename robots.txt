@@ -75,3 +75,7 @@ Disallow: /
 
 User-agent: TurnitinBot
 Disallow: /
+
+User-Agent: *
+Allow: *
+Sitemap: https://zautumn.top/sitemap.xml

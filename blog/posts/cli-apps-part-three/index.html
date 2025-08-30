@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Node CLI 3, Html2text | Autumn's Blog</title>
+    <meta name="description" content="Node CLI 3, Html2text" />
+    <meta name="keywords" content="node,cli,terminal,html,markdown" />
+    <meta property="og:description" content="Node CLI 3, Html2text" />
+    <meta property="og:title" content="Node CLI 3, Html2text" />
+    <meta property="og:url" content="https://zautumn.top/blog/posts/cli-apps-part-three" />
+
+    <meta charset="utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="author" content="Autumn Z" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Autumn's Blog" />
+<meta property="og:image" content="https://zautumn.top/logo.png" />
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="/blog">Autumn's Blog</a></h1>
+      <h2>Node CLI 3, Html2text</h2>
+      <h3>2016-09-27</h3>
+      <h4><small>Tags: node, cli, terminal, html, markdown</small></h4>
+    </header>
+    <hr>
+    <div>
+      <p>Okay, ready to build another command-line app in Node?</p>
+<p>If you haven't seen my last two posts, you should check them out, since I'm not
+going to cover a lot of the basics again. They're both on writing small cli apps
+in Node, with no dependencies.</p>
+<ul>
+<li><a href="http://zautumn.top/blog/2016/a-basic-cli-app-in-node.html">React component generator</a></li>
+<li><a href="http://zautumn.top/blog/2016/note-taking-app.html">JSON Note-taking app</a></li>
+</ul>
+<p>And here's the finished product from the latter:</p>
+<pre><code class="language-javascript">#!/usr/bin/env node
+
+'use strict'
+
+const { readFileSync , writeFile }  = require('fs')
+const log = console.log
+const arg = process.argv[2]
+const n = './notes.json'
+const file = readFileSync(n)
+const notes = JSON.parse(file)
+
+const writeTheFile = () =&gt; {
+  const taken = JSON.stringify(notes, null, 2)
+  writeFile(n, taken, 'utf8', err =&gt; {
+    if (err) return log(err)
+  })
+}
+
+const takeNote = (notes, note) =&gt; {
+  notes.push(note)
+  writeTheFile()
+}
+
+const removeNote = (notes, noteIndex) =&gt; {
+  notes.splice(noteIndex -1, 1)
+  writeTheFile()
+}
+
+const runApp = () =&gt; {
+  if (arg) {
+    switch (arg) {
+      case '-s':
+        log(notes)
+        break
+      case '-r':
+        const noteIndex = process.argv[3]
+        removeNote(notes, noteIndex)
+        break
+      default:
+        takeNote(notes, arg)
+    }
+  } else {
+    return log('Please pass an argument')
+  }
+}
+
+if (!module.parent) {
+  runApp()
+}
+</code></pre>
+<hr />
+<p>What we're going to build this time is going to be a little more complex.
+We're going to write a program that downloads a website and turns it into
+Markdown for easy offline reading. This isn't a new concept, and I actually
+use a Python script called <a href="https://github.com/aaronsw/html2text">html2text</a>
+for this on an almost-daily basis, but just for fun, we'll do something
+similar in Node.</p>
+<p>This will also be the first time we'll be working with external modules, which
+is really the most exciting and awesome thing about Node.</p>
+<p>Our goal here is to have a small tool we can use like this:</p>
+<pre><code class="language-bash">./index.js zautumn.top
+</code></pre>
+<p>And it'll give us back the contents of <code>zautumn.top</code>, in Markdown, ready to
+read in the terminal, pipe to an editor, or whatever.</p>
+<p>First things first: we'll need a project. Make a new directory and get into
+it, and <code>npm init</code>.</p>
+<pre><code class="language-bash">mkdir html2txt
+cd html2xt
+npm init -y
+</code></pre>
+<p>The <code>-y</code> flag just means "don't ask me questions." You can skip that flag and
+fill in the info for your <code>package.json</code> if you'd like, or just go back and
+edit it later.</p>
+<p>We're going to be using a couple of things built-in to Node, so we can go
+ahead and require them now. We'll need <code>http</code>'s <code>get</code> method, and also a way
+to work with an argument. If you've done either of my previous tutorials,
+you'll already be familiar with Node's <code>process.argv</code>.</p>
+<pre><code class="language-javascript">const { get } = require('http')
+const url = process.argv[2]
+</code></pre>
+<p>Let's see if we can't get some HTML, just as a starting point.</p>
+<pre><code class="language-javascript">get(url, res =&gt; {
+  res.on('data', d =&gt; {
+    console.log(d)
+  })
+  res.on('end', () =&gt; {
+    console.log('done')
+  })
+})
+</code></pre>
+<p>Try that out with something like <code>node index.js http://google.com</code>.</p>
+<p>You should see something like `</p>
+    </div>
+    <footer>
+  <a href="/">Autumn Z</a>
+  &middot; <a href="https://github.com/zautumnz/zautumnz.github.io">Source</a>
+  &middot; <a href="/blog/rss.xml">RSS</a>
+</footer>
+  </body>
+</html>
