@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Autumn's Blog</title><link>https://zautumn.top/blog/</link><description>Programming, socialism, and Buddhism.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Sat, 30 Aug 2025 19:02:34 +0000</lastBuildDate><item><title>right speech and politics</title><link>https://zautumn.top/blog/posts/right-speech-and-politics</link><description>&lt;p&gt;friendly reminder that while obviously engaged/humanistic buddhism isn't a
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Autumn's Blog</title><link>https://zautumn.top/blog/</link><description>Programming, socialism, and Buddhism.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Sat, 01 Nov 2025 04:17:52 +0000</lastBuildDate><item><title>right speech and politics</title><link>https://zautumn.top/blog/posts/right-speech-and-politics</link><description>&lt;p&gt;friendly reminder that while obviously engaged/humanistic buddhism isn't a
 problem, the Tathagata specifically instructed bhikkhus to not get into
 political topics. it's fine to have opinions, it's fine to even talk about them
 sometimes, but not fine to get up on the high seat and talk politics.&lt;/p&gt;
@@ -157,7 +157,7 @@ just now, I honestly probably would not bother learning the lore, or the company
 drama, or even about how Lee Soo-Man produced the only two albums outside of SM
 just because he was impressed with LOONA's Cherry Bomb cover. Just bite off what
 you can chew and don't let it overwhelm you.&lt;/p&gt;
-&lt;p&gt;Welcome to LOONA Island.&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/stan-loona</guid><pubDate>Sun, 09 Jul 2023 00:00:00 -0700</pubDate></item><item><title>package.json is just fine</title><link>https://zautumn.top/blog/posts/draft</link><description>&lt;p&gt;Quick response to &lt;a href="https://frantic.im/javascript-gom-jabbar/"&gt;this nonsense&lt;/a&gt;,
+&lt;p&gt;Welcome to LOONA Island.&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/stan-loona</guid><pubDate>Sun, 09 Jul 2023 00:00:00 -0700</pubDate></item><item><title>package.json is just fine</title><link>https://zautumn.top/blog/posts/package-json-is-just-fine</link><description>&lt;p&gt;Quick response to &lt;a href="https://frantic.im/javascript-gom-jabbar/"&gt;this nonsense&lt;/a&gt;,
 section by section, because it's highly upvoted on Hacker News and is a load of
 bullshit.&lt;/p&gt;
 &lt;p&gt;Semver is good, actually, and if you never hit v1, that's a you problem. Not
@@ -224,7 +224,7 @@ build tool, so now you're just being silly.&lt;/p&gt;
 &lt;p&gt;Of course &lt;code&gt;engines&lt;/code&gt; lists Node. The purpose of &lt;code&gt;engines&lt;/code&gt; is really to tell
 consumers of your package their requirements. Node 10? Node 16? That actually
 does matter, and it's a programmatic way of explaining requirements.&lt;/p&gt;
-&lt;p&gt;Final note: your package.json is in a weird order. &lt;code&gt;npx sortpack&lt;/code&gt; to fix that.&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/draft</guid><pubDate>Sun, 02 Jul 2023 00:00:00 -0700</pubDate></item><item><title>Common JS Array Methods Cheatsheet</title><link>https://zautumn.top/blog/posts/common-array-methods</link><description>&lt;p&gt;Cheatcheet for common JS array methods, because this is a super common category of
+&lt;p&gt;Final note: your package.json is in a weird order. &lt;code&gt;npx sortpack&lt;/code&gt; to fix that.&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/package-json-is-just-fine</guid><pubDate>Sun, 02 Jul 2023 00:00:00 -0700</pubDate></item><item><title>Common JS Array Methods Cheatsheet</title><link>https://zautumn.top/blog/posts/common-array-methods</link><description>&lt;p&gt;Cheatcheet for common JS array methods, because this is a super common category of
 questions on StackOverflow and I'm sick of typing it up in a comment, so now I
 can just copy-paste it.&lt;/p&gt;
 &lt;ul&gt;
@@ -1886,7 +1886,222 @@ const url = process.argv[2]
 })
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Try that out with something like &lt;code&gt;node index.js http://google.com&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You should see something like `&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/cli-apps-part-three</guid><pubDate>Tue, 27 Sep 2016 00:00:00 -0700</pubDate></item><item><title>Node CLI 2, Note Taking App</title><link>https://zautumn.top/blog/posts/note-taking-app</link><description>&lt;h2 id="build-a-note-taking-app-for-the-terminal-in-node"&gt;Build a Note-Taking App for the Terminal, in Node&lt;/h2&gt;
+&lt;p&gt;You should see something like &lt;code&gt;&amp;lt;Buffer 3c 21 64 6f 63 74 7&lt;/code&gt; (and so on).
+&lt;a href="https://nodejs.org/api/buffer.html"&gt;Buffers&lt;/a&gt; are great and all, but that's
+pretty useless for actual reading. Try calling &lt;code&gt;toString&lt;/code&gt; on that data and you
+should see some actual HTML (&lt;code&gt;console.log(d.toString())&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;(Note: you may see a 301 page here.)&lt;/p&gt;
+&lt;p&gt;Awesome! We now have all the functionality of prepending &lt;code&gt;view-source:&lt;/code&gt; to a
+URL in the browser. Let's do something with that HTML, since it's probably not
+how you prefer to read stuff.&lt;/p&gt;
+&lt;p&gt;There are a lot of great modules out there for working with Markdown. For this
+post, I've decided to go with a super simple one without a whole lot of
+options, &lt;a href="https://www.npmjs.com/package/to-markdown"&gt;to-markdown&lt;/a&gt;. If you're
+not super familiar with npm, you're about to learn just about all you need to
+know to get started.&lt;/p&gt;
+&lt;p&gt;In your terminal, &lt;code&gt;npm i -S to-markdown&lt;/code&gt;. This is a shorthand for the command
+&lt;code&gt;npm install --save to-markdown&lt;/code&gt;; most npm commands have shorter versions, and
+it can really save you a lot of time if you get used to using them.&lt;/p&gt;
+&lt;p&gt;You should see a bunch of stuff happen in the terminal. If you check your
+&lt;code&gt;package.json&lt;/code&gt;, you'll now see &lt;code&gt;to-markdown&lt;/code&gt; in there. It should like
+something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;{
+  &amp;quot;name&amp;quot;: &amp;quot;something&amp;quot;,
+  // probably some other stuff
+  &amp;quot;dependencies&amp;quot;: {
+    &amp;quot;to-markdown&amp;quot;: &amp;quot;^3.0.1&amp;quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we'll need to get that into the program. If you're using Babel, you can
+use &lt;code&gt;import&lt;/code&gt;, but to keep things simple we'll stick with &lt;code&gt;require&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const toMarkdown = require('to-markdown')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now try running the HTML through this before logging it out.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;// ...
+const toMarkdown = require('to-markdown')
+// ...
+  res.on('data', d =&amp;gt; {
+    console.log(toMarkdown(d.toString()))
+  })
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you run the script again, you should see beautiful, super-readable
+Markdown! All done!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Well, mostly. This is nice and all, but there are definitely some things we
+can do to make this script a bit better. Firstly, it's annoying to have to
+always type &lt;code&gt;http://&lt;/code&gt; before a URL, so maybe we should automatically add that
+on.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const url = process.argv[2]
+const src = (url.includes('http://') url.includes('https://')) ? url : `http://${url}`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All this extra bit is doing is checking if the passed in argument aleady has a
+scheme, and if it doesn't, just sticking on on the beginning. If you're not
+familiar with template literals, check out the previous tutorials and the
+&lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"&gt;docs on
+MDN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you're not familiar with &lt;code&gt;Array.prototype.includes()&lt;/code&gt;, it's basically a
+shorthand for &lt;code&gt;.indexOf(foo !== -1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Make sure you change the &lt;code&gt;get&lt;/code&gt; call to use &lt;code&gt;src&lt;/code&gt; instead of &lt;code&gt;url&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And, as in the previous tutorials, we'll want to just be able to execute this
+script, without needing to type in &lt;code&gt;node&lt;/code&gt; each time, so add a shebang and make
+it exectuable.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-shell"&gt;chmod +x index.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;#!/usr/bin/env node
+
+const { get } = require('http')
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you should be able to just do something like &lt;code&gt;./index.js zautumn.top&lt;/code&gt; and
+see some results.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;to-markdown&lt;/code&gt; can handle take some options. One of them is to use
+&lt;a href="https://help.github.com/categories/writing-on-github"&gt;GitHub-Flavored
+Markdown&lt;/a&gt;, which is
+pretty nice since that's probably what most of us are used to using. To enable
+this, just pass &lt;code&gt;{ gfm: true }&lt;/code&gt; in the call to &lt;code&gt;toMarkdown&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;// ...
+console.log(toMarkdown(d.toString(), { gfm: true }))
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may notice some tags are making it through the conversion (&lt;code&gt;script&lt;/code&gt;,
+&lt;code&gt;span&lt;/code&gt;, &lt;code&gt;div&lt;/code&gt;, and probably a few others); I'm not going to go over all of the
+options that &lt;code&gt;to-markdown&lt;/code&gt; can take, but you should check out the docs and
+learn how to write filters, if you're interested. You could also write your
+own function to strip out unwanted elements, and run the Markdown through
+this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const cleanOutStuff = string =&amp;gt;
+  string.replace(/(div|script|span)/g, '')
+
+console.log(cleanOutStuff(toMarkdown(d.toString(), { gfm: true })))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But it'd probably be easier to just learn the options rather that spinning
+something custom like this.&lt;/p&gt;
+&lt;p&gt;One thing that really irks me when I'm reading in the terminal is text that
+doesn't wrap. Sometimes I'm on a very large screen, and it can get difficult
+to keep track of where I am when the text is too wide. 80 characters is a
+pretty reasonable limit, so why don't we get this text to wrap there? We're
+going to use another module for this:
+&lt;a href="https://github.com/substack/node-wordwrap"&gt;wordwrap&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-shell"&gt;npm i -S wordwrap
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const wordwrap = require('wordwrap')
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This module needs to know how many characters it can put in a line. We could
+just pass it &lt;code&gt;80&lt;/code&gt;, but I think maybe we should handle cases where the terminal
+is resized very small but maybe won't stay that way, so we're going to find
+out how big the terminal currently is and base our decision on that.
+&lt;code&gt;process.stdout&lt;/code&gt; has a way for us to find this out.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const wordwrap = require('wordwrap')
+const { rows } = process.stdout
+const wraplength = (rows &amp;lt; 80 ? 80 : rows)
+const wrapper = wordwrap(wraplength)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All we're doing here is wrapping to either the width of the terminal or 80
+characters, whichever happens to be greater.&lt;/p&gt;
+&lt;p&gt;Now we can use that &lt;code&gt;wrapper&lt;/code&gt; when we log out the results.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;console.log(wrapper(toMarkdown(d.toString(), { gfm: true })))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;So, awesome! Your script should now do just about everything you want it to
+do. There's really only one big thing left to do: make it less ugly. That
+&lt;code&gt;console.log&lt;/code&gt; is really getting gross, don't you think? I like to handle this
+by just defining a bunch of functions I can throw together, so I don't have to
+have all this junk cluttering up my space.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const opts = { gfm: true }
+const convert = a =&amp;gt; toMarkdown(a, opts)
+const wrap = a =&amp;gt; wrapper(a)
+const log = a =&amp;gt; console.log(a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I'm using &lt;code&gt;a&lt;/code&gt; as a parameter here. You can use something more descriptive if
+you'd like, it really doesn't matter.&lt;/p&gt;
+&lt;p&gt;And I think we should also just wait until we have all the data before logging
+anything, so let's adjust our HTTP call (and stick it in a function):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;const main = arg =&amp;gt; get(arg, res =&amp;gt; {
+  let b = '' // `b` for `body`
+  res.on('data', d =&amp;gt; b += d.toString)
+  res.on('end', () =&amp;gt; log(wrap(convert(b))))
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Your linter might yell at you saying you can't return assignment. It's
+probably right, but nothing's going to break. If you're concerned about it,
+just wrap that &lt;code&gt;b += d.toString()&lt;/code&gt; in some braces.&lt;/p&gt;
+&lt;p&gt;Obviously, this is a function, so we need to call it somewhere.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;main(src)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We're just passing it our URL that may or may not have &lt;code&gt;http://&lt;/code&gt; stuck on to
+it.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Now you're really done! I suggest you go check out &lt;code&gt;to-markdown&lt;/code&gt;, play around
+with &lt;code&gt;process&lt;/code&gt;, and see what else you can do with this thing. If you make
+something pretty neat, you should consider releasing it! Check out &lt;code&gt;npm help
+adduser&lt;/code&gt; and &lt;code&gt;npm help publish&lt;/code&gt; to see how you could go about this. (There are
+probably similar modules out there, though, so make sure you're not stepping
+on anyone's toes first!)&lt;/p&gt;
+&lt;p&gt;I'd also suggest you do some basic error handling, but that's totally up to
+you.&lt;/p&gt;
+&lt;p&gt;For the previous two tutorials I waited until the following post to show a
+finished version of the script; since this is the last tutorial on writing CLI
+apps in Node that I intend to write, the full script is below, as well as my
+manifest file (&lt;code&gt;package.json&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Note: I tend to prefer shorter (but hopefully still readable) names for
+things, and a somewhat opinionated code style, so the full script below may
+differ a bit from your results, and that's totally fine.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-json"&gt;{
+  &amp;quot;name&amp;quot;: &amp;quot;html2txt&amp;quot;,
+  &amp;quot;description&amp;quot;: &amp;quot;html2text sorta thing for blog post&amp;quot;,
+  &amp;quot;version&amp;quot;: &amp;quot;0.0.1&amp;quot;,
+  &amp;quot;author&amp;quot;: {
+    &amp;quot;name&amp;quot;: &amp;quot;Autumn&amp;quot;
+  },
+  &amp;quot;license&amp;quot;: &amp;quot;WTFPL&amp;quot;,
+  &amp;quot;main&amp;quot;: &amp;quot;index.js&amp;quot;,
+  &amp;quot;scripts&amp;quot;: {
+    &amp;quot;start&amp;quot;: &amp;quot;node index&amp;quot;
+  },
+  &amp;quot;homepage&amp;quot;: &amp;quot;https://github.com/zautumnz/blog#readme&amp;quot;,
+  &amp;quot;repository&amp;quot;: {
+    &amp;quot;type&amp;quot;: &amp;quot;git&amp;quot;,
+    &amp;quot;url&amp;quot;: &amp;quot;https://github.com/zautumnz/blog.git&amp;quot;
+  },
+  &amp;quot;bugs&amp;quot;: &amp;quot;https://github.com/zautumnz/blog/issues&amp;quot;,
+  &amp;quot;keywords&amp;quot;: [
+    &amp;quot;html&amp;quot;,
+    &amp;quot;markdown&amp;quot;
+  ],
+  &amp;quot;dependencies&amp;quot;: {
+    &amp;quot;to-markdown&amp;quot;: &amp;quot;^3.0.1&amp;quot;,
+    &amp;quot;wordwrap&amp;quot;: &amp;quot;^1.0.0&amp;quot;
+  },
+  &amp;quot;devDependencies&amp;quot;: {}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;#!/usr/bin/env node
+
+const url = process.argv[2] || 'zautumn.top'
+const { get } = require('http')
+const { rows } = process.stdout
+const len = (rows &amp;lt; 80 ? 80 : rows)
+const toMd = require('to-markdown')
+const ww = require('wordwrap')
+const wrapper = ww(len)
+const opts = { gfm: true }
+const conv = a =&amp;gt; toMd(a, opts)
+const wrap = a =&amp;gt; wrapper(a)
+const log = a =&amp;gt; console.log(a)
+const src = url.includes(('http://') || url.includes('https://')) ? url : `http://${url}`
+
+const main = a =&amp;gt; get(a, res =&amp;gt; {
+  let b = ''
+  res.on('data', d =&amp;gt; {b += d.toString()})
+  res.on('end', () =&amp;gt; log(wrap(conv(b))))
+})
+
+if (!module.parent) main(src)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thanks for reading! The full version of this module has been published at
+&lt;a href="http://npm.im/html2txt"&gt;html2txt&lt;/a&gt;.&lt;/p&gt;</description><guid isPermaLink="false">https://zautumn.top/blog/posts/cli-apps-part-three</guid><pubDate>Tue, 27 Sep 2016 00:00:00 -0700</pubDate></item><item><title>Node CLI 2, Note Taking App</title><link>https://zautumn.top/blog/posts/note-taking-app</link><description>&lt;h2 id="build-a-note-taking-app-for-the-terminal-in-node"&gt;Build a Note-Taking App for the Terminal, in Node&lt;/h2&gt;
 &lt;p&gt;This is a follow-up to my first post on writing command-line apps in Node. I
 suggest you read that first, but this post should stand on its own if you don't
 want to. Below is the little React component generator that you'd get if you

@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://zautumn.top/</loc>
-  <lastmod>2024-12-21</lastmod>
+  <lastmod>2025-10-20</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 </url>
 <url>
   <loc>https://zautumn.top/resume/</loc>
-  <lastmod>2024-08-10</lastmod>
+  <lastmod>2025-10-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
@@ -18,10 +18,9 @@
   <changefreq>never</changefreq>
   <priority>0.0</priority>
 </url>
-<!--
 <url>
   <loc>https://zautumn.top/blog/</loc>
-  <lastmod>2024-06-25</lastmod>
+  <lastmod>2025-10-31</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.6</priority>
 </url>
@@ -40,12 +39,6 @@
 <url>
   <loc>https://zautumn.top/blog/posts/short-rant-on-languages/</loc>
   <lastmod>2017-05-19</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://zautumn.top/blog/posts/draft/</loc>
-  <lastmod>2023-07-02</lastmod>
   <changefreq>never</changefreq>
   <priority>0.5</priority>
 </url>
@@ -112,6 +105,12 @@
 <url>
   <loc>https://zautumn.top/blog/posts/on-learning-fp/</loc>
   <lastmod>2016-10-16</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://zautumn.top/blog/posts/package-json-is-just-fine/</loc>
+  <lastmod>2023-07-02</lastmod>
   <changefreq>never</changefreq>
   <priority>0.5</priority>
 </url>
@@ -243,7 +242,7 @@
 </url>
 <url>
   <loc>https://zautumn.top/presentations/</loc>
-  <lastmod>2020-10-02</lastmod>
+  <lastmod>2025-08-30</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.4</priority>
 </url>
@@ -255,12 +254,6 @@
 </url>
 <url>
   <loc>https://zautumn.top/presentations/2019-01-23-golang/</loc>
-  <lastmod>2024-06-25</lastmod>
-  <changefreq>yearly</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://zautumn.top/cv/</loc>
   <lastmod>2024-06-25</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.5</priority>
@@ -295,5 +288,4 @@
   <lastmod>2020-01-19</lastmod>
   <priority>0.1</priority>
 </url>
--->
 </urlset>
